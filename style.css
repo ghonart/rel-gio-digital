@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background-color: #f7f799;
+}
+.wrapper {
+  height: 100px;
+  width: 360px;
+  background: linear-gradient(135deg, #e0d124, #f0823f, #bd374c);
+  position: center;
+  border-radius: 10px;
+  animation: animate 1.5s linear infinite;
+}
+.wrapper .display,
+.wrapper .span {
+  position: absolute;
+  center
+  transform: translate(-50%, -50%);
+}
+.wrapper .display {
+  z-index: 999;
+  background: #443a37;
+  width: 350px;
+  border-radius: 6px;
+  text-align: center;
+}
+.wrapper .display #time {
+  line-height: 85px;
+  color: #f0823f;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
